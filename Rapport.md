@@ -56,11 +56,12 @@ On évalue ces métrique sur le systeme complet mais on réalise aussi une mesur
 ### 3-2 performance du classifieur de Bayes
 
 précision | recall | f-score
+--------------------------------
 0.73 | 0.73 | 0.73
 
 Le systeme donne les même valeur pour les 3 mesures, donc a un système qui se comporte de manière plutot homogène.
-               precision    recall  f1-score   support
-
+               precision  |  recall | f1-score  | support
+--------------------------|------------------------------------
 Advertisement       0.73      0.67      0.70        57
         Email       0.93      0.93      0.93       135
          Form       0.81      0.82      0.81        88

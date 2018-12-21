@@ -1,7 +1,7 @@
 # Rapport
 
 **Objectif:**
-Effectuer la classification du type de documents, dans les documents discponible pour le procès des groupes américain de tabac. Les texte on été obtenu par OCR, on utilisera directement les contenus de texte obtenu par l'OCR.
+Effectuer la classification du type de documents, dans les documents disponible pour le procès des groupes américain de tabac. Les texte on été obtenu par OCR, on utilisera directement les contenus de texte obtenu par l'OCR.
 
 ## 1-Analyse des données
 
@@ -34,13 +34,48 @@ Avant l'analyse de celle-ci on a réaliser quelques opérations sur celle-ci:
 Pour la classifiction nous avons décidé de tester 2 approches :
 * Approches naives bayes
 Pour cette approches on séparer notre ensemble de donner en 80%-20% soit:
+
 Apprentissage | Test/Validation
 2785 | 697
+
+Ensuite on utilise **MultinomialNB** de **sklearn**, qui est un classifieur de Bayes pour une classification multiclasses.
+
 
 * Approches réseaux de neurones
 
 
 ## 3-Evaluation des performance
+### Indicateur de performance
+
+On évaluer différentes métriques pour correctement évaluer notre classifieur, celles-ci sont:
+* **la précision :** nombre de document pertinent retourné/nombre de document total, permet d'avoir une vision global du systeme
+* **le rappel :** nombre de document pertinent retourné/nombre de document réellement pertinent, permet de voir aussi les erreurs 
+* **f-mesure :**  f=2x(pxr)/(p+r), elle combine la précision et le rapelle et permet d'avoir leur moyenne
+
+On évalue ces métrique sur le systeme complet mais on réalise aussi une mesure de la précision,rappel et f-score sur chaque classe car on a un système multi-classe, ce qui nous permet de voir sur quel classe le système le plus de mal à effectuer la reconnaissance.
+### 3-2 performance du classifieur de Bayes
+
+précision | recall | f-score
+0.73 | 0.73 | 0.73
+
+Le systeme donne les même valeur pour les 3 mesures, donc a un système qui se comporte de manière plutot homogène.
+               precision    recall  f1-score   support
+
+Advertisement       0.73      0.67      0.70        57
+        Email       0.93      0.93      0.93       135
+         Form       0.81      0.82      0.81        88
+       Letter       0.75      0.72      0.74       122
+         Memo       0.60      0.73      0.66       109
+         News       0.69      0.74      0.71        34
+         Note       0.33      0.33      0.33        36
+       Report       0.59      0.56      0.57        48
+       Resume       1.00      1.00      1.00        15
+   Scientific       0.68      0.49      0.57        53
+
+### 3-3 performance du réseaux de neurones
+
+
+
 
 ## Pistes d'améliorations
 

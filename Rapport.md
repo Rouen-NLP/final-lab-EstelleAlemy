@@ -17,3 +17,5 @@ On dispose d'un dataset de 3482 images, dont on a collecté le texte. Les 3482 t
 * Resume
 * Scientific
 
+![Image proportion de chaque classe]
+(https://github.com/Rouen-NLP/final-lab-EstelleAlemy/blob/master/images/plot.png)

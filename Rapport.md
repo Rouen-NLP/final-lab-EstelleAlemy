@@ -36,6 +36,7 @@ Pour la classifiction nous avons décidé de tester 2 approches :
 Pour cette approches on séparer notre ensemble de donner en 80%-20% soit:
 
 Apprentissage | Test/Validation
+--------------|-------------------
 2785 | 697
 
 Ensuite on utilise **MultinomialNB** de **sklearn**, qui est un classifieur de Bayes pour une classification multiclasses.
@@ -55,23 +56,26 @@ On évaluer différentes métriques pour correctement évaluer notre classifieur
 On évalue ces métrique sur le systeme complet mais on réalise aussi une mesure de la précision,rappel et f-score sur chaque classe car on a un système multi-classe, ce qui nous permet de voir sur quel classe le système le plus de mal à effectuer la reconnaissance.
 ### 3-2 performance du classifieur de Bayes
 
-précision | recall | f-score
---------------------------------
-0.73 | 0.73 | 0.73
+ Precision | Recall | f-score
+------------ | -------------
+ 0.73 | 0.73 | 0.73
+
+
 
 Le systeme donne les même valeur pour les 3 mesures, donc a un système qui se comporte de manière plutot homogène.
-               precision  |  recall | f1-score  | support
---------------------------|------------------------------------
-Advertisement       0.73      0.67      0.70        57
-        Email       0.93      0.93      0.93       135
-         Form       0.81      0.82      0.81        88
-       Letter       0.75      0.72      0.74       122
-         Memo       0.60      0.73      0.66       109
-         News       0.69      0.74      0.71        34
-         Note       0.33      0.33      0.33        36
-       Report       0.59      0.56      0.57        48
-       Resume       1.00      1.00      1.00        15
-   Scientific       0.68      0.49      0.57        53
+
+   Classe      precision  |  recall | f1-score  | support
+-------------|------------|---------|-----------|--------------
+Advertisement |0.73 | 0.67 |0.70 | 57
+Email | 0.93 | 0.93 | 0.93 | 135
+Form | 0.81 | 0.82 | 0.81  | 88
+Letter | 0.75 | 0.72 |0.74 | 122
+Memo | 0.60 | 0.73 | 0.66 |109
+News | 0.69 | 0.74 |0.71  | 34
+Note | 0.33 | 0.33 | 0.33 | 36
+Report | 0.59 | 0.56 | 0.57 | 48
+Resume | 1.00 | 1.00 | 1.00 | 15
+Scientific | 0.68 | 0.49 | 0.57 | 53
 
 ### 3-3 performance du réseaux de neurones
 

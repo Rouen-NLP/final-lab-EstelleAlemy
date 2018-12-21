@@ -127,7 +127,9 @@ Classe  | precision | recall | f1-score | support
 ## Pistes d'améliorations
 
 Pour le classifieur de bayes, on pourrait améliorer la classification en jouant un peu plus sur les hyperparamètres du classifieur de bayes.
+
 Pour l'approche réseaux de neurones augmenter le nombre d'exemple d'apprentissage(soit en collectant plus de données ou en génrant de manière artificielle des données -> data augmentation) serait un bon moyen de pouvoir augmenter les performance et aussi tester plusieur algorithme d'optimisation (ici on a utilisé que Adam) comme par exmple CTC et rmsprop (utilisé pour les séquences de texte) .
+
 Pour les 2 méthode de manière générale on a seulement retirer les espaces pour nettoyer le texte, on pourrait voir si le retrait de toute les ponctuation influent sur les performance.
 
 

@@ -84,6 +84,7 @@ On évalue ces métrique sur le systeme complet mais on réalise aussi une mesur
 Le systeme donne les même valeur pour les 3 mesures, donc a un système qui se comporte de manière plutot homogène.
 
 **Résulats par classe**
+
    Classe    | precision  |  recall | f1-score  | support
 -------------|------------|---------|-----------|--------------
 Advertisement |0.73 | 0.67 |0.70 | 57
@@ -109,7 +110,7 @@ Precision | Recall | f-score
 
 Classe  | precision | recall | f1-score | support
 --------|-----------|--------|----------|------------
-0  0.78  | 0.55  |   0.64   |   33
+0 | 0.78  | 0.55  |   0.64   |   33
 1 | 0.96 | 0.97  |   0.96   |   66
 2 | 0.81 | 0.73  |   0.77   |   48
 3 | 0.85 | 0.78  |   0.82   |   60

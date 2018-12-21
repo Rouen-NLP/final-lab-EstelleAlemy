@@ -75,6 +75,7 @@ On évalue ces métrique sur le systeme complet mais on réalise aussi une mesur
 ### 3-2 performance du classifieur de Bayes
 
 **Resultats système global**
+
  Precision | Recall | f-score
 -----------|--------|-----------
  0.73 | 0.73 | 0.73
